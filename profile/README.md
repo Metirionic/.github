@@ -6,20 +6,22 @@ Based in Dresden, Germany — [metirionic.com](https://metirionic.com)
 
 ## MARS — Metirionic Advanced Ranging Stack
 
-**MARS** is our proprietary ranging middleware for Bluetooth Channel Sounding. It processes raw CS subevent data (I/Q samples) and produces accurate distance estimates using the Pathfinder algorithm — even in multipath-heavy environments.
+**MARS** is our proprietary ranging middleware for Bluetooth® Channel Sounding. It processes raw Channel Sounding subevent data, including I/Q samples, and produces accurate distance estimates even in multipath-heavy environments.
 
-The open-source projects in this organization are the building blocks that work with MARS:
+The public repositories in this organization provide evaluation tools and integration building blocks around MARS:
 
-- **[mars-bluetooth-hci](https://github.com/Metirionic/mars-bluetooth-hci)** — Rust library for parsing Bluetooth HCI events related to Channel Sounding. It decodes CS subevent data from the BLE controller and makes it available to the MARS processing pipeline or custom applications.
+* [`mars-ranging-demo`](https://github.com/Metirionic/mars-ranging-demo) — Windows desktop application for visualizing continuous Bluetooth Channel Sounding distance measurements between an initiator and a reflector development kit. The app provides live distance monitoring, signal-path insight, and export of measurement data for further analysis.
+* [`mars-cs-nrf54l`](https://github.com/Metirionic/mars-cs-nrf54l) — Zephyr RTOS firmware for Nordic nRF54L15-based hardware. Provides ready-to-flash initiator and reflector samples for Channel Sounding evaluation.
+* [`mars-bluetooth-hci`](https://github.com/Metirionic/mars-bluetooth-hci) — Rust library for parsing Bluetooth HCI events related to Channel Sounding and making CS measurement data available to MARS or custom applications.
 
-- **[mars-cs-nrf54l](https://github.com/Metirionic/mars-cs-nrf54l)** — Zephyr RTOS firmware for Nordic nRF54L15 hardware. Provides ready-to-flash initiator and reflector samples that perform CS procedures and output ranging data over UART. The initiator firmware uses `mars-bluetooth-hci` to serialize CS measurements via COBS framing, which can then be fed into MARS for distance estimation.
+## Public repositories
 
-## Open-source projects
+| Repository                                                               | Language / Type | Description                                                                             |
+| ------------------------------------------------------------------------ | --------------: | --------------------------------------------------------------------------------------- |
+| [`mars-ranging-demo`](https://github.com/Metirionic/mars-ranging-demo)   |     Windows GUI | Channel Sounding Evaluation Application for live distance visualization and data export |
+| [`mars-cs-nrf54l`](https://github.com/Metirionic/mars-cs-nrf54l)         |      C / Zephyr | nRF54L15 Channel Sounding firmware samples for initiator and reflector roles            |
+| [`mars-bluetooth-hci`](https://github.com/Metirionic/mars-bluetooth-hci) |            Rust | Bluetooth HCI parser for Channel Sounding events and MARS integration                   |
 
-| Repository | Language | Description |
-|------------|----------|-------------|
-| [mars-cs-nrf54l](https://github.com/Metirionic/mars-cs-nrf54l) | C | nRF54L15 Channel Sounding firmware samples |
-| [mars-bluetooth-hci](https://github.com/Metirionic/mars-bluetooth-hci) | Rust | HCI event parsing library for BLE Channel Sounding |
 
 ## Learn more
 
