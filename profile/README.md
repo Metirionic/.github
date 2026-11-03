@@ -12,6 +12,7 @@ The public repositories in this organization provide evaluation tools and integr
 
 * [`mars-ranging-demo`](https://github.com/Metirionic/mars-ranging-demo) — Windows desktop application for visualizing continuous Bluetooth Channel Sounding distance measurements between an initiator and a reflector development kit. The app provides live distance monitoring, signal-path insight, and export of measurement data for further analysis.
 * [`mars-cs-nrf54l`](https://github.com/Metirionic/mars-cs-nrf54l) — Zephyr RTOS firmware for Nordic nRF54L15-based hardware. Provides ready-to-flash initiator and reflector samples for Channel Sounding evaluation.
+* [`mars-cs-nrf54lm`](https://github.com/Metirionic/mars-cs-nrf54lm) — Zephyr RTOS firmware for Nordic nRF54LM20-based hardware. Provides initiator and reflector samples for Channel Sounding evaluation, with prebuilt firmware releases for quick evaluation.
 * [`mars-bluetooth-hci`](https://github.com/Metirionic/mars-bluetooth-hci) — Rust library for parsing Bluetooth HCI events related to Channel Sounding and making CS measurement data available to MARS or custom applications.
 
 ## Public repositories
@@ -20,6 +21,7 @@ The public repositories in this organization provide evaluation tools and integr
 | ------------------------------------------------------------------------ | --------------: | --------------------------------------------------------------------------------------- |
 | [`mars-ranging-demo`](https://github.com/Metirionic/mars-ranging-demo)   |     Windows GUI | Channel Sounding Evaluation Application for live distance visualization and data export |
 | [`mars-cs-nrf54l`](https://github.com/Metirionic/mars-cs-nrf54l)         |      C / Zephyr | nRF54L15 Channel Sounding firmware samples for initiator and reflector roles            |
+| [`mars-cs-nrf54lm`](https://github.com/Metirionic/mars-cs-nrf54lm)       |      C / Zephyr | nRF54LM20 Channel Sounding firmware samples for initiator and reflector roles           |
 | [`mars-bluetooth-hci`](https://github.com/Metirionic/mars-bluetooth-hci) |            Rust | Bluetooth HCI parser for Channel Sounding events and MARS integration                   |
 
 
