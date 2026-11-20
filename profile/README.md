@@ -4,6 +4,17 @@
 
 Based in Dresden, Germany — [metirionic.com](https://metirionic.com)
 
+## Download
+
+All Metirionic software and firmware is published on GitHub Releases.
+
+- [Channel Sounding Evaluation Application (Windows)](https://github.com/Metirionic/mars-ranging-demo/releases/latest) — standalone `.exe`; activation key required on first launch.
+- [Channel Sounding firmware for nRF54L15](https://github.com/Metirionic/mars-cs-nrf54l/releases/latest) — open source (MIT), prebuilt initiator and reflector images.
+- [Channel Sounding firmware for nRF54LM20](https://github.com/Metirionic/mars-cs-nrf54lm/releases/latest) — new platform, prebuilt images.
+- [MARS Bluetooth HCI crates](https://github.com/Metirionic/mars-bluetooth-hci) — source only.
+
+MARS itself is a licensed product. The public repositories provide evaluation tools and integration building blocks. See [metirionic.com/downloads](https://metirionic.com/downloads/) for the full guide.
+
 ## MARS — Metirionic Advanced Ranging Stack
 
 **MARS** is our proprietary ranging middleware for Bluetooth® Channel Sounding. It processes raw Channel Sounding subevent data, including I/Q samples, and produces accurate distance estimates even in multipath-heavy environments.
